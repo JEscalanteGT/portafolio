@@ -1,0 +1,1 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Inicio</title><link rel="shortcut icon" href="{{ asset('favicon.ico')}}"><link rel=stylesheet href="{{ asset('css/main-index.css')}}"></head><body><p>Pagina de inicio 3</p></body></html>

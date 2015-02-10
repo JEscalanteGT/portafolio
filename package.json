@@ -1,6 +1,12 @@
 {
   "devDependencies": {
     "gulp": "^3.8.8",
-    "laravel-elixir": "*"
+    "gulp-minify-html": "^0.1.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^2.0.0",
+    "gulp-util": "^3.0.3",
+    "laravel-elixir": "*",
+    "nib": "^1.1.0",
+    "watchify": "^2.3.0"
   }
 }
