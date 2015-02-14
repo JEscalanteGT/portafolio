@@ -30,7 +30,20 @@ gulp.task('stylus', function () {
   .pipe(gulp.dest(cssDst));
 });
 
-gulp.task('toLaravel', ['html','stylus'], function (){
+gulp.task('partials', function (){
+  var htmlSrc = './resources/assets/partials/*.html',
+  htmlDst = './resources/views/partials';
+
+  gulp.src(htmlSrc)
+  .pipe(minifyHTML())
+  .pipe(rename(function(path){
+    path.extname = '.blade.php';
+  }))
+  .pipe(gulp.dest(htmlDst));
+});
+
+gulp.task('toLaravel', ['html','stylus', 'partials'], function (){
   gulp.watch("./resources/assets/templates/*.html", ['html']);
   gulp.watch("./resources/assets/stylus/*.styl", ['stylus']);
+  gulp.watch("./resources/assets/partials/*.html", ['partials']);
 });

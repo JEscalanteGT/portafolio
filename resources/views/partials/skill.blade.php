@@ -1,0 +1,1 @@
+<article class=Skill><img class=Skill-avatar src="{{asset('img/skill.png')}}" alt="Habilidad Tecnica" height=96 width=96><section class=Skill-data><p class=Skill-data-name>{{ $skill }}</p><p class=Skill-data-domain>Dominio: <span class=Skill-data-domain-stars>&#xe9d9;&#xe9d9;&#xe9d9;&#xe9d9;&#xe9d7;</span></p></section></article>

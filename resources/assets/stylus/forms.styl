@@ -1,0 +1,24 @@
+form
+  overflow: hidden;
+  label
+    margin-top: 10px;
+    &:first-child
+      margin-top: 0px;
+  input, textarea
+    border-radius: 3px;
+    border: 1px solid color-gray;
+    color: color-black;
+    padding: 0.25rem;
+    width: 100%;
+    &:focus
+      border-color: color-skyBlue;
+  button
+    border: none;
+    padding: 5px 20px;
+    float: right;
+
+  button, input, textarea
+    box-sizing: border-box
+    outline: none;
+  label, input
+    display: block;

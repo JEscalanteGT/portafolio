@@ -1,3 +1,166 @@
+@import 'normalize.styl'
+@import 'fonts.styl'
+@import 'colors.styl'
+@import 'icons.styl'
+@import 'menu.styl'
+@import 'skill.styl'
+@import 'project.styl'
+@import 'forms.styl'
+
 body
-  background-color: red;
-  color: white;
+  background-color: color-white;
+  color: color-black;
+  font-family: 'source_sans_pro';
+  font-size: 16px
+  overflow-x: hidden;
+
+a
+  color: color-skyBlue;
+  text-decoration: none;
+  &:hover
+    text-decoration: underline;
+
+p
+  margin: 0px 0px 10px 0px;
+
+.AboutMe
+  .AboutMe-description
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+  .AboutMe-features
+    text-align: left;
+    ul
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      .AboutMe-features-tags
+        color: color-skyBlue;
+        p
+          margin-bottom: 0px;
+        span
+          color: color-black;
+      li
+        p
+          span
+            margin-right: 5px;
+
+.ContactMe
+  background-color: color-blue;
+  color: color-white;
+  .ContactMe-title
+    text-align: left;
+    margin-bottom: 10px;
+  .ContactMe-description
+    margin-bottom: 20px;
+  .ContactMe-form
+    background-color: color-white;
+    border-radius: 5px;
+    padding: 20px;
+    > form label
+      color: color-black;
+
+.Footer
+  background-color: color-black;
+  color: color-white;
+  text-align: center;
+  .icon-heart
+      color: color-strongRed;
+  p:last-child
+    margin-bottom: 0px;
+  .wrapper
+    padding: 20px;
+
+.Projects
+  .Projects-content
+    .Project
+      margin-bottom: 20px;
+      &:last-child
+        margin-bottom: 0px;
+
+.Skills
+  .Skills-subSection
+    margin-bottom: 30px;
+    &:last-child
+      margin-bottom: 0px;
+  .Skills-subSection-content
+    > article
+      margin-bottom: 20px;
+    > article:last-child
+      margin-bottom: 0px;
+
+.ProfileCard
+  background-color: color-blue;
+  color: color-white;
+  text-align: center;
+  background-image: url(http://portafolio.localhost.local/img/cover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .ProfileCard-avatar
+    border: 4px solid color-white;
+    border-radius: 50%;
+
+  .ProfileCard-contactButton
+    display: block;
+    font-size: 1.25em;
+    margin: 0px 10%;
+    padding: 10px 0px;
+
+  .ProfileCard-description
+    font-size: 1.125em;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+
+  .ProfileCard-menu
+    display: block;
+    text-align: right;
+    margin: -5px 10px 20px 0px;
+    font-size:1.375em;
+    .ProfileCard-menu-menuButton
+      display: inline-block
+      padding: 5px
+      border-radius: 5px;
+      &:hover
+        background-color: rgba(color-white, 0.25);
+
+  .ProfileCard-name
+    font-weight: normal;
+    margin: 30px 0px 20px 0px;
+
+  .wrapper
+    padding-top: 20px !important;
+
+.u-sectionTitle
+  font-size: 1.875rem;
+  font-weight: normal;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+
+.u-subSectionTitle
+  font-size: 1.25 rem;
+  font-weight: normal;
+  margin: 0px 0px 20px 0px;
+
+.u-sectionBorderBottom
+  border-bottom: 1px solid;
+  border-color: color-gray;
+
+.u-button
+  background-color: color-red;
+  border-bottom: 4px solid;
+  border-color: color-strongRed;
+  border-radius: 5px;
+  color: color-white;
+  &:hover
+    background-color: rgba(color-red,0.9);
+
+.wrapper
+  padding: 40px 0px;
+  margin: 0px 20px;
+
+@media screen and (min-width:1041px)
+  .wrapper
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1000px;
+    margin: 0 auto;
