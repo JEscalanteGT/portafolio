@@ -25,10 +25,8 @@ p
 
 .AboutMe
   .AboutMe-description
-    text-align: center;
     margin: 0px 0px 20px 0px;
   .AboutMe-features
-    text-align: left;
     ul
       list-style: none;
       margin: 0px;
@@ -37,34 +35,41 @@ p
         color: color-skyBlue;
         p
           margin-bottom: 0px;
-        span
-          color: color-black;
       li
         p
           span
+            color: color-black;
             margin-right: 5px;
 
 .ContactMe
   background-color: color-blue;
   color: color-white;
-  .ContactMe-title
-    text-align: left;
-    margin-bottom: 10px;
-  .ContactMe-description
-    margin-bottom: 20px;
+  font-size: 0px;
   .ContactMe-form
     background-color: color-white;
     border-radius: 5px;
-    padding: 20px;
+    overflow: hidden;
+    form
+      margin: 20px;
     > form label
       color: color-black;
+  .ContactMe-text
+    .ContactMe-title
+      text-align: left;
+      margin-bottom: 10px;
+  .ContactMe-form, .ContactMe-text
+    font-size: 1rem;
 
 .Footer
   background-color: color-black;
   color: color-white;
+  font-family: 'source_sans_pro_bold';
+  font-size: 0.875em;
   text-align: center;
   .icon-heart
       color: color-strongRed;
+  p:first-child
+    margin-bottom: 5px;
   p:last-child
     margin-bottom: 0px;
   .wrapper
@@ -72,7 +77,9 @@ p
 
 .Projects
   .Projects-content
+    font-size: 0px;
     .Project
+      font-size: 1rem;
       margin-bottom: 20px;
       &:last-child
         margin-bottom: 0px;
@@ -80,22 +87,24 @@ p
 .Skills
   .Skills-subSection
     margin-bottom: 30px;
+    font-size: 0px;
+    .Skills-subSection-content
+      .Skill
+        font-size: 1rem;
+        margin-bottom: 20px;
+        &:last-child
+          margin-bottom: 0px;
     &:last-child
-      margin-bottom: 0px;
-  .Skills-subSection-content
-    > article
-      margin-bottom: 20px;
-    > article:last-child
       margin-bottom: 0px;
 
 .ProfileCard
   background-color: color-blue;
+  background-image: url(http://portafolio.localhost.local/img/cover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: color-white;
   text-align: center;
-  background-image: url(http://portafolio.localhost.local/img/cover.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   .ProfileCard-avatar
     border: 4px solid color-white;
     border-radius: 50%;
@@ -103,13 +112,12 @@ p
   .ProfileCard-contactButton
     display: block;
     font-size: 1.25em;
-    margin: 0px 10%;
     padding: 10px 0px;
 
   .ProfileCard-description
     font-size: 1.125em;
     font-weight: normal;
-    margin: 0px 0px 20px 0px;
+    margin-bottom: 20px;
 
   .ProfileCard-menu
     display: block;
@@ -124,6 +132,7 @@ p
         background-color: rgba(color-white, 0.25);
 
   .ProfileCard-name
+    font-family: "source_sans_pro_bold";
     font-weight: normal;
     margin: 30px 0px 20px 0px;
 
@@ -158,9 +167,87 @@ p
   padding: 40px 0px;
   margin: 0px 20px;
 
-@media screen and (min-width:1041px)
+@media screen and (max-width:767px)
+  .AboutMe
+    .AboutMe-description
+      text-align: center;
+      margin: 0px 0px 20px 0px;
+    .AboutMe-features
+      text-align: left;
+
+  .ContactMe
+    .ContactMe-text
+      margin-bottom: 20px;
+
+  .ProfileCard
+    .ProfileCard-contactButton
+      margin: 0px 20%;
+
+
+@media screen and (min-width:768px) and (max-width:1023px)
+  .AboutMe
+    .AboutMe-description
+      margin-right: 3.2967%;
+
+  .ProfileCard
+    .ProfileCard-contactButton
+      width: 48.3516%
+      margin: 0 auto;
+    .ProfileCard-description
+      margin-left: 12.912%;
+      margin-right: 12.912%;
+
+  .Project, .Skill
+    &:nth-child(2n+1)
+      margin-right: 3.2967%;
+    &:nth-last-child(2)
+      margin-bottom: 0px;
+
+  .AboutMe-description, .AboutMe-features, .ContactMe-form, .ContactMe-text, .Project, .Skill
+    display: inline-block;
+    vertical-align: top;
+    width: 48.3516%;
+
+
+@media screen and (min-width:1024px)
+  .AboutMe
+    .AboutMe-description
+      margin-right: 8.5365%
+      width: 48.78%
+    .AboutMe-features
+      width: 40.2439%;
+    .AboutMe-description, .AboutMe-features
+      display: inline-block;
+      vertical-align: top;
+
+  .ContactMe
+    .ContactMe-form
+      width: 48.78%;
+    .ContactMe-text
+      margin-right: 8.5365%
+      width: 42.683%;
+    .ContactMe-form, .ContactMe-text
+      display: inline-block
+      vertical-align: top;
+
+  .ProfileCard
+    .ProfileCard-contactButton
+      width: 36.5854%
+      margin: 0 auto;
+    .ProfileCard-description
+      margin-left: 17.073%;
+      margin-right: 17.073%;
+
+  .Project, .Skill
+    display: inline-block;
+    vertical-align: top;
+    width: 31.7073%;
+    &:nth-child(3n+2)
+      margin-left: 2.439%;
+      margin-right: 2.439%;
+    &:nth-last-child(2), &:nth-last-child(3)
+      margin-bottom: 0px;
+
   .wrapper
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 1000px;
+    width: 984px;
     margin: 0 auto;
