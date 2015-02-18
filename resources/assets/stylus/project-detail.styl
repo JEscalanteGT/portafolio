@@ -1,0 +1,141 @@
+.ProjectDetail
+  font-size: 1rem;
+  a
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+    span
+      display: inline-block;
+      margin-right: 5px;
+  .ProjectDetail-back
+    font-size: 1.125rem;
+    font-family: 'source_sans_pro_bold';
+  .ProjectDetail-data
+    h4
+      margin: 0px 0px 10px 0px;
+    .ProjectDetail-data-skills
+      .Skill--mini
+        border-radius: 50%;
+        margin-right: 5px;
+        &:last-child
+          margin-right: 0px;
+    .ProjectDetail-data-gallery
+      .ProjectDetail-data-gallery-content
+        font-size: 0px;
+        img
+          display: inline-block;
+          margin-bottom: 20px;
+          vertical-align: top;
+    .ProjectDetail-data-description, .ProjectDetail-data-skills
+      margin-bottom: 20px;
+
+  .ProjectDetail-list
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    li
+      color: color-gray;
+      margin-bottom: 5px;
+      display: inline-block;
+      vertical-align: top;
+      a
+        margin-bottom: 0px;
+      span
+        color: color-black;
+        margin-right: 5px;
+      &:nth-child(2n+1)
+        margin-right: 20px;
+      &:last-child
+        margin-bottom: 0px;
+
+  .ProjectDetail-title
+    .ProjectDetail-title-name
+      color: color-blue;
+      font-size: 1.25em;
+      font-family: 'source_sans_pro_bold'
+
+  .ProjectDetail-picture, .ProjectDetail-title
+    margin-bottom: 20px;
+
+@media screen and (max-width:767px)
+  .ProjectDetail
+    .ProjectDetail-data
+      .ProjectDetail-data-gallery
+        .ProjectDetail-data-gallery-content
+          img
+            width: 47.2727%;
+            height: auto;
+            &:nth-child(2n+1)
+              margin-right: 5.45%;
+            &:nth-last-child(-n+2)
+              margin-bottom: 0px;
+    .ProjectDetail-picture
+      .ProjectDetail-picture-img
+        display: block;
+        width: 100%;
+        height: auto;
+
+@media screen and (min-width:550px) and (max-width:767px)
+  .ProjectDetail
+    .ProjectDetail-data
+      .ProjectDetail-data-gallery
+        .ProjectDetail-data-gallery-content
+          img
+            width: 29.70%;
+            height: auto;
+            margin-right: 5.45%;
+            &:nth-child(3n)
+              margin-right: 0;
+            &:nth-last-child(-n+3)
+              margin-bottom: 0px;
+
+@media screen and (min-width:768px) and (max-width:1023px)
+  .ProjectDetail
+    .ProjectDetail-data
+      .ProjectDetail-data-gallery
+        .ProjectDetail-data-gallery-content
+          img
+            width: 29.7459%;
+            height: auto;
+            margin-right: 5.3811%;
+            &:nth-child(3n)
+              margin-right: 0;
+            &:nth-last-child(-n+3)
+              margin-bottom: 0px;
+    .ProjectDetail-dataContainer
+      position: relative;
+    .ProjectDetail-picture
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 35.439%;
+      .ProjectDetail-picture-img
+        width: 100%;
+    .ProjectDetail-data, .ProjectDetail-title
+      margin-left: 38.7362%;
+      width: 58.0729%;
+
+@media screen and (min-width:1024px)
+  .ProjectDetail
+    .ProjectDetail-data
+      .ProjectDetail-data-gallery
+        .ProjectDetail-data-gallery-content
+          img
+            width: 22.2222%;
+            height: auto;
+            margin-right: 3.7037%;
+            &:nth-child(4n)
+              margin-right: 0px;
+            &:nth-last-child(-n+4)
+              margin-bottom: 0px;
+    .ProjectDetail-dataContainer
+      position: relative;
+    .ProjectDetail-picture
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 31.7073%;
+    .ProjectDetail-picture-img
+      width: 100%;
+    .ProjectDetail-data, .ProjectDetail-title
+      margin-left: 34.1463%;
+      width: 65.8536%;
